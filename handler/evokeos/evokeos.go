@@ -1,4 +1,4 @@
-package defaultHandler
+package evokeHandler
 
 import (
 	"net/http"
@@ -12,9 +12,9 @@ type Handler struct {
 }
 
 func (h Handler) GetOSName(c echo.Context) error {
-	return c.String(http.StatusOK, "not implemented, config path: "+h.Config.Path)
+	return c.String(http.StatusOK, "evokeos, config path: "+h.Config.Path)
 }
 
 func (h Handler) GetOrg(c echo.Context) error {
-	return c.String(http.StatusOK, "not implemented, config path: "+h.Config.Path)
+	return c.String(http.StatusOK, "evoke creative, config path: "+h.Config.Path)
 }
