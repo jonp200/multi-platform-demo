@@ -1,8 +1,7 @@
 package handler
 
-import "github.com/labstack/echo/v4"
+import "multi-platform-demo/os/configuration"
 
-type Handler interface {
-	GetOSName(c echo.Context) error
-	GetOrg(c echo.Context) error
+type Handler struct {
+	Config configuration.Configuration
 }
