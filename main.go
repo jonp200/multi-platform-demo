@@ -8,12 +8,12 @@ import (
 
 func main() {
 	e := echo.New()
-	c := configuration.Configuration{Path: "config.yaml"}
+	c := configuration.Configuration{Port: "8080"}
 
 	h := handler.Handler{Config: c}
 
 	e.GET("/os", h.GetOSName)
 	e.GET("/org", h.GetOrg)
 
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start(":" + c.Port))
 }

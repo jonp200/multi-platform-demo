@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="go test multi-platform-demo" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
+    <module name="multi-platform-demo" />
+    <working_directory value="$PROJECT_DIR$" />
+    <useCustomBuildTags value="true" />
+    <kind value="DIRECTORY" />
+    <package value="multi-platform-demo" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$" />
+    <framework value="gotest" />
+    <method v="2" />
+  </configuration>
+</component>
